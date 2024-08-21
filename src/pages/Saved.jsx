@@ -35,9 +35,9 @@ const Saved = () => {
       {savedTimers.length === 0 ? (
         <div>
           <p>But first, log your work!</p>
-          <Button href="/timer" className="fs-5">
-            Go to Timer
-          </Button>
+          <Link to="/timer">
+            <Button className="fs-5">Go to Timer</Button>
+          </Link>
         </div>
       ) : isSmallScreen ? (
         savedTimers.map((timer, index) => <SavedTimerCard key={index} timer={timer} isSelected={selectedTimers.includes(timer.timerId)} handleSelect={handleSelectTimer} />)
