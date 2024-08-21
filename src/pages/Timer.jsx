@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TimerWidget from '../components/TimerWidget/TimerWidget';
 import FocusMode from '../components/FocusMode';
-import { Button, Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Checklist from '../components/Checklist';
 
 const Timer = () => {
@@ -12,7 +12,6 @@ const Timer = () => {
   const handleExitFocusMode = () => setFocusMode(false);
 
   return (
-    <Container fluid>
       {focusMode ? (
         <FocusMode onExit={handleExitFocusMode} />
       ) : (
@@ -29,7 +28,6 @@ const Timer = () => {
           </Button>
         </>
       )}
-    </Container>
   );
 };
 
