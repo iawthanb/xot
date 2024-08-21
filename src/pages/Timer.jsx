@@ -12,6 +12,7 @@ const Timer = () => {
   const handleExitFocusMode = () => setFocusMode(false);
 
   return (
+    <>
       {focusMode ? (
         <FocusMode onExit={handleExitFocusMode} />
       ) : (
@@ -28,6 +29,7 @@ const Timer = () => {
           </Button>
         </>
       )}
+    </>
   );
 };
 
