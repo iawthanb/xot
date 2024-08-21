@@ -1,0 +1,216 @@
+@import 'variables';
+
+.App {
+  text-align: center;
+  min-height: 100%;
+}
+
+.main-content {
+  padding: 2.5rem 1.5rem;
+}
+
+/* ------------------------------------------ */
+
+.welcome-container {
+  p {
+    margin: 1rem 0;
+    color: var(--color-primary-dark);
+    @include sm {
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  .lottie-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include sm {
+      margin: 2.5rem 0;
+    }
+  }
+
+  .welcome-widget {
+    margin: 2rem 0;
+
+    .view-work {
+      height: 50px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      @include sm {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.toast-container {
+  margin-top: 5rem;
+  position: fixed;
+  z-index: 1;
+
+  .toast {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0.75rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .toast-header {
+    border-radius: 0.75rem;
+    background-color: $color-primary;
+    color: white;
+  }
+}
+
+/* ------------------------------------------ */
+
+.modal-content {
+  border-radius: 1.5rem;
+
+  .modal-body span {
+    margin-bottom: 0.7rem;
+  }
+
+  input {
+    border-radius: 0.75rem;
+  }
+
+  label.form-label,
+  .modal-body span {
+    font-weight: 600;
+  }
+}
+
+/* ------------------------------------------ */
+
+.card.timer-widget {
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 0.75rem 0.5rem;
+  max-width: 30rem;
+
+  .card-body .timer-display {
+    font-size: 2em;
+    margin: 1.2rem 0;
+  }
+
+  .card-body .timer-button {
+    margin: 0 0.75rem;
+    font-size: 1.2em;
+  }
+
+  .card-body .reset-button {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+      border-color: $color-secondary-dark;
+    }
+  }
+
+  .card-body .save-button {
+    background-color: $color-green;
+    border-color: $color-green;
+
+    &:hover {
+      background-color: $color-green-dark;
+      border-color: $color-green-dark;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .timer-button,
+      .reset-button,
+      .save-button {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------ */
+
+.saved-timers.card {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+
+  .card-text {
+    text-align: left;
+  }
+}
+
+.saved-time-table {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid darkgrey;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+
+  .table {
+    overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 1.2rem;
+
+    thead {
+      border-bottom: 2px solid $color-primary-darker;
+      tr:first-of-type {
+        color: white;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------ */
+
+.checklist-container {
+  width: 100%;
+  margin: auto;
+  @include md {
+    width: 70%;
+  }
+  @include lg {
+    width: 50%;
+  }
+  @include xl {
+    width: 40%;
+  }
+}
+
+/* ------------------------------------------ */
+
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+    @include md {
+      font-size: 7rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    @include md {
+      font-size: 2rem;
+    }
+  }
+}

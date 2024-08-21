@@ -1,0 +1,40 @@
+// Colors
+$color-primary: #0d7377;
+$color-primary-dark: #0d5c5f;
+$color-primary-darker: #094041;
+$color-primary-light: #7effcb9e;
+$color-secondary: #3c3f44;
+$color-secondary-dark: #555961;
+$color-green: #13c48f;
+$color-green-dark: #0c7b5a;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Viewpotrs
+@mixin sm {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
