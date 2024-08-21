@@ -7,6 +7,7 @@ import ConfirmationModal from '../components/Saved/ConfirmationModal';
 import SavedTimerCard from '../components/Saved/SavedTimerCard';
 import SavedTimerTable from '../components/Saved/SavedTimerTable';
 import { toggleItemInArray } from '../utils/toggler';
+import { Link } from 'react-router-dom';
 
 const Saved = () => {
   const dispatch = useDispatch();
